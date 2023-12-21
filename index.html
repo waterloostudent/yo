@@ -1,0 +1,331 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;">
+    <title>micascreativecorner</title>
+    <style>
+      /* Common styles for all sheets */
+      body {
+        margin: 0;
+        padding-top: 75px;
+        font-family: "Quicksand", sans-serif;
+        color: white;
+        background: radial-gradient(circle, coral, midnightblue, black);
+        background-size: 400% 400%;
+        animation: gradientAnimation 20s ease infinite;
+      }
+
+      /* Animation for the background gradient */
+
+      /*
+      Code adapted from https://www.w3schools.com/cssref/tryit.php?filename=trycss3_keyframes4
+      Author: www.w3schools.com
+      Original Name: The @keyframes Rule
+      Original Description: Displays a moving square with changing colours
+      Original Date retrieved: Dec. 2, 2023
+      */
+
+      /* Copied code starts */
+      @keyframes gradientAnimation {
+
+        0%,
+        100% {
+          background-position: 200% 200%;
+        }
+
+        50% {
+          background-position: 150% 150%;
+        }
+      }
+
+      /* Copied code ends */
+
+      /* Styles for anchor links */
+
+      a {
+        color: white;
+        text-decoration: none;
+      }
+
+      /* Styles for navigation */
+
+      nav ul,
+      nav li {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      nav {
+        background-color: rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+      }
+
+      .website-title,
+      nav a {
+        color: white;
+        text-decoration: none;
+        padding: 14px 16px;
+        display: inline-block;
+      }
+
+      .website-title {
+        text-decoration: none;
+        pointer-events: none;
+        float: left;
+      }
+
+      nav a {
+        float: right;
+        margin-top: 15px;
+      }
+
+      a:hover {
+        color: gold;
+      }
+
+      nav a:hover {
+        background-color: white;
+        color: black;
+      }
+
+      .content-block {
+        width: 95%;
+        margin: 50px auto;
+        border-top: 1px solid;
+        overflow: hidden;
+      }
+
+      .heading-block {
+        float: left;
+        text-align: right;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-top: 20px;
+      }
+
+      .text-block-center {
+        float: left;
+        width: 20%;
+        margin: 10px 70px;
+      }
+
+      .text-block-right {
+        float: right;
+        font-size: 1.5em;
+        width: 40%;
+        margin: 10px;
+      }
+
+      .image-block {
+        float: right;
+        width: 40%;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 10px 0px;
+      }
+
+      /* Styles for gallery */
+
+      /*
+      Code adapted from https://www.w3schools.com/cssref/tryit.php?filename=trycss_grid-template
+      Author: www.w3schools.com
+      Original Name: CSS Grid Template
+      Original Description: Demonstrates the use of the grid-template property
+      Original Date retrieved: Dec. 2, 2023
+      */
+
+      /* Copied code starts */
+
+      .gallery {
+        /* Display grid with two columns */
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        /* Set gap between grid items */
+        padding: 0px 30px 40px;
+        /* Add padding around the grid */
+      }
+
+      .gallery img {
+        width: 100%;
+        height: auto;
+        /* Maintain image aspect ratio */
+      }
+
+      /* Copied code ends */
+
+      /* Styles for newsletter form */
+      .newsletter {
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      footer {
+        bottom: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        padding: 40px;
+        text-align: center;
+      }
+
+      input {
+        padding: 10px;
+        margin: 5px;
+        width: 200px;
+      }
+
+      button {
+        padding: 10px 20px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+
+      video {
+        width: 100%;
+        opacity: 0.3;
+      }
+
+      /* Styles for headings */
+
+      h1 {
+        width: 60%;
+        margin: 100px 20px;
+        padding: 10px;
+        font-size: 4em;
+        font-family: "Playfair", serif;
+      }
+
+      h1:hover {
+        font-weight: bold;
+        color: #fff68f;
+      }
+
+      h2 {
+        font-size: 2em;
+        margin: 50px 10px;
+        text-align: center;
+      }
+
+      h1:hover,
+      h2:hover {
+        font-weight: bold;
+        color: #fff68f;
+      }
+
+      /* Styles for poem */
+      .poem-block {
+        text-align: center;
+        margin: 10px;
+        line-height: 2;
+      }
+
+      /* Styles for table of contents shortcut*/
+
+      .shortcut {
+        text-align: center;
+        font-style: italic;
+        margin: 50px 20px auto;
+        font-size: .75em;
+      }
+
+      /* Styles for table */
+
+      table {
+        width: 100%;
+      }
+
+      th,
+      td {
+        text-align: left;
+        padding: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#" class="website-title">Mica Andrea Morante</a></li>
+        <li><a href="photos.html">Photos</a></li>
+        <li><a href="../poems-main/poems.html">Poems</a></li>
+        <li><a href="../index.html">About</a></li>
+      </ul>
+    </nav>
+    <h1>Photos</h1>
+    <div class="gallery">
+      <a href="IMG_0062.jpg">
+        <img src="IMG_0062.jpg" alt="Dream Item 1">
+      </a>
+      <a href="IMG_0066.jpg">
+        <img src="IMG_0066.jpg" alt="Dream Item 2">
+      </a>
+      <a href="IMG_0068.jpg">
+        <img src="IMG_0068.jpg" alt="Dream Item 3">
+      </a>
+      <a href="IMG_6858-2.jpg">
+        <img src="IMG_6858-2.jpg" alt="Fall Item 1">
+      </a>
+      <a href="IMG_6927.jpg">
+        <img src="IMG_6927.jpg" alt="Fall Item 2">
+      </a>
+      <a href="IMG_6929.jpg">
+        <img src="IMG_6929.jpg" alt="Fall Item 3">
+      </a>
+      <a href="0A4417D7-86C1-4A94-8814-C060F661815C 2.JPG">
+        <img src="0A4417D7-86C1-4A94-8814-C060F661815C 2.JPG" alt="Moon Item 1">
+      </a>
+      <a href="20A281BE-FE9A-42B2-9091-6F9A34CDEFD6 2.JPG">
+        <img src="20A281BE-FE9A-42B2-9091-6F9A34CDEFD6 2.JPG" alt="Moon Item 2">
+      </a>
+      <a href="DE62D037-7C89-4979-95CE-F6C7EF0A9D86 2.JPG">
+        <img src="DE62D037-7C89-4979-95CE-F6C7EF0A9D86 2.JPG" alt="Moon Item 3">
+      </a>
+      <a href="IMG_3428.JPG">
+        <img src="IMG_3428.JPG" alt="Train Item 1">
+      </a>
+      <a href="IMG_3434 2.jpg">
+        <img src="IMG_3434 2.jpg" alt="Train Item 2">
+      </a>
+      <a href="IMG_3441.JPG">
+        <img src="IMG_3441.JPG" alt="Train Item 3">
+      </a>
+    </div>
+
+    <div class="content-block">
+      <div class="heading-block">Contact</div>
+      <div class="text-block-center">
+        <p><a href="mailto:info@example.com?subject=Inquiry&body=Hello%20there,">maomoran@uwaterloo.ca</a></p>
+        <p><a href="tel:+1234567890">(555) 555-5555</a></p>
+        <p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">instagram</a></p>
+      </div>
+      <div class="image-block">
+        <img src="IMG_3464.JPG" alt="me holding a camera">
+      </div>
+    </div>
+    <footer>
+      <div class="newsletter">
+        <h4>Sign up for free updates</h4>
+        <form action="" method="post">
+          <input type="email" name="email" placeholder="Your email" required>
+          <button type="submit">
+            Subscribe
+          </button>
+        </form>
+      </div>
+    </footer>
+  </body>
+</html>
