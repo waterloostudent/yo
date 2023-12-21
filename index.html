@@ -173,6 +173,28 @@
         margin: 10px 70px;
       }
 
+
+	/****************************** gallery ************************/
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 	/****************************** footer ************************/
 
       footer {
@@ -200,27 +222,84 @@
     <nav>
       <ul>
         <li><a href="#" class="website-title">Aadya Verma</a></li>
-        <li><a href="gallery-main/photos.html">About</a></li>
-        <li><a href="poems-main/poems.html">Portfolio</a></li>
-        <li><a href="index.html">Professional</a></li>
-        <li><a href="index.html">Contact</a></li>
+        <li><a href="About">About</a></li>
+        <li><a href="Portfolio">Portfolio</a></li>
+        <li><a href="Professional">Professional</a></li>
+        <li><a href="Contact">Contact</a></li>
 	 	  </ul>
     </nav>
       
       
     <h1>
-      Welcome to my website. You can learn a little but about me and also explore some of my work, including projects, artwork and hackathon designs!
+      Welcome to my website!
     </h1>
 
     <div class="content-block">
-      <div class="heading-block">Portfolio</div>
-      <div class="text-block-right">
-		<h2>Explore My Work</h2>
-        <p>These are my logo designs for my first Hackathon, Recess Hacks 2021. My team won 	best UI/UX for our work on a discord remote-learning extension called "Discerning</p>
+      <div class="heading-block"> Portfolio
+<h2><a name="Portfolio">Portfolio</a></h2>
+
+        
+
+  <div class="gallery">
+    <a target="_blank" href="image (1) (1).png">
+      <img src="image (1) (1).png" alt="hackathon designs" width="50" height="50">
+    </a>
+    <div class="desc">My first hackathon, Recess Hacks, 2021. This is my logo design process (we won best UI/UX!)</div>
+  </div>
+      
+  <div class="gallery">
+    <a target="_blank" href="12266467-4E42-479C-A29B-69C14776C76F.jpeg">
+      <img src="12266467-4E42-479C-A29B-69C14776C76F.jpeg" alt="hand painting" width="50" height="50">
+    </a>
+    <div class="desc">My first love! Painting was where my art and design journey started. This is a realistic watercolour painting of my hand (enjoy:)</div>
+      
+    <div class="content-block">
+      <div class="heading-block"> Profesional
+			<h2><a name="Profesional">Professional</a></h2>
+    <nav>
+      <ul>
+        <li><a href="#" class="website-title">Aadya Verma</a></li>
+        <li><a href="../gallery-main/photos.html">Photos</a></li>
+        <li><a href="poems.html">Poems</a></li>
+        <li><a href="../index.html">About</a></li>
+      </ul>
+    </nav>
+    
+        <div class="content-block">
+      <div class="heading-block">
+        <h3>
+          
+        My Projects</h3>
+      </div>
+      <div class="text-block-center">
+        <table id="table-of-contents">
+          <tr>
+            <th>Project</th>
+            <th>Date</th>
+            <th>Info</th>
+          </tr>
+          <tr>
+            <td>JennFer</td>
+            <td>Nov, 2022-</td>
+            <td>Founder at student housing start-up</td>
+          </tr>
+          <tr>
+            <td>Diversity & Beyond</td>
+            <td>June-2022-Jun-2023</td>
+            <td>Summer Inter</td>
+          </tr>
+          <tr>
+            <td>Hackthe6ix</td>
+            <td>Nov,2023-</td>
+            <td>Business Development Exec</td>
+          </tr>
+        </table>
       </div>
     </div>
 
+    </div>
 
+        
   
     <div class="content-block">
       <div class="heading-block">Contact</div>
@@ -231,16 +310,13 @@
       <div class="newsletter">
         <h4>Contact form</h4>
         <form action="" method="post">
-          <input type="email" name="email" placeholder="Type email" required>
           <input type="email" name="email" placeholder="Your thoughts/questions" required>
-
           <button type="submit">Send
           </button>
         </form>
       </div>
 
       </div>
-
 
 
 
